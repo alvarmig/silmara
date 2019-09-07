@@ -1,0 +1,153 @@
+/*****************************************/
+/**********    NAVBAR   *****************/
+/***************************************/
+.navbar {
+    background-color: #e3f2fd;
+}
+
+.header-toolbar ul li {
+    padding-top: 17px;
+    list-style-type: none;
+    padding-right: 20px;
+    display: inline-block;
+}
+.header-toolbar ul li a {
+    color: grey;
+    font-size: 12px;
+}
+.header-toolbar img {
+    width: 18px; 
+}
+
+/*****************************************/
+/**********    MAIN   *****************/
+/***************************************/
+
+.main-container {
+    padding-right: 0;
+    padding-left:0;
+}
+.jumbotron {
+    padding-top: 0;
+    padding-bottom:0;
+    box-shadow: 0 0 10px #3F0C1F;
+    border: 1px solid #3F0C1F;
+    border-radius: 6px;
+    background: url(https://via.placeholder.com/1179x300) no-repeat;
+    height: 302px;
+}
+.jumbotron img {
+    width: 100%;
+    height: 300px;
+}
+/**********    filters section  *****************/
+.filters-box{
+    margin-bottom: 30px;
+}
+
+/**********    items-list  *****************/
+.single-category {
+    margin-bottom: 20px;
+}
+.single-category span {
+    display: block;
+}
+.img-fluid {
+    box-shadow: 0 0 10px #3F0C1F;
+    border: 1px solid #3F0C1F;
+    border-radius: 6px;
+}
+
+/**********    FOOTER  *****************/
+.footer-title {
+    color: #fff;
+    font-size: 15px;    
+}
+.info-tiles p a {
+    color: #000;
+    font-size: 12px;
+}
+.footer-container{
+    background: #e0e0e0;
+    padding-top: 20px;
+}
+.footer-container ul {
+    margin-top: 10px;
+    padding-left: 0;
+}
+.footer-container ul li {
+    list-style-type: none;
+    font-size: 12px;
+    /*text-align: left;*/
+}
+.footer-container ul li a{
+   color: #000;
+   line-height: 1.8em;
+}
+#social-icons li {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+#social-icons li img {
+    width: 25px;
+}
+/**********   END FOOTER  ***************/
+
+
+/*****************************************/
+/**********    MEDIA QUERIES  ***********/
+/***************************************/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .header-toolbar {
+        display: none;
+    }
+    .filters-box{
+        margin-top: 30px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    .header-toolbar {
+        display: none;
+    }
+    .filters-box{
+        margin-top: 30px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px)  {
+    .header-toolbar {
+        display: none;
+    }
+    #img-banner img {
+        box-shadow: 0 0 10px #3F0C1F;
+        border: 1px solid #3F0C1F;
+        border-radius: 6px;
+    }
+    .filters-box{
+        margin-top: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .jumbotron {
+        padding-top: 0;
+        padding-bottom:0;
+        background: url(https://via.placeholder.com/960x300) no-repeat;
+        height: 300px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

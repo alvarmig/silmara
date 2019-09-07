@@ -1,0 +1,148 @@
+/*****************************************/
+/**********    NAVBAR   *****************/
+/***************************************/
+.navbar {
+  background-color: #e3f2fd;
+}
+
+.header-toolbar ul li {
+  padding-top: 17px;
+  list-style-type: none;
+  padding-right: 20px;
+  display: inline-block;
+}
+.header-toolbar ul li a {
+  color: grey;
+  font-size: 12px;
+}
+.header-toolbar img {
+  width: 18px;
+}
+
+/*****************************************/
+/**********    MAIN   *****************/
+/***************************************/
+
+/**********    Breadcrumb (Navigation Location)  *****************/
+.breadcrumb {
+  background-color: #fff;
+}
+
+.breadcrumb li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.product-details {
+  margin-bottom: 30px;
+}
+.desc-product {
+  padding-top: 20px;
+}
+.add-toCart {
+  color: #000;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  padding: 16px 0px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  width: 200px;
+}
+
+/**********   END  Breadcrumb (Navigation Location)  *****************/
+
+/**********    FOOTER  *****************/
+
+.footer-title {
+  color: #fff;
+  font-size: 15px;
+}
+.info-tiles p a {
+  color: #000;
+  font-size: 12px;
+}
+.footer-container {
+  background: #e0e0e0;
+  padding-top: 20px;
+}
+.footer-container ul {
+  margin-top: 10px;
+  padding-left: 0px;
+}
+.footer-container ul li {
+  list-style-type: none;
+  font-size: 12px;
+  /*text-align: left;*/
+}
+.footer-container ul li a {
+  color: #000;
+  line-height: 1.8em;
+}
+#social-icons li {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: inline-block;
+}
+#social-icons li img {
+  width: 25px;
+}
+/**********   END FOOTER  ***************/
+
+/*****************************************/
+/**********    MEDIA QUERIES  ***********/
+/***************************************/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .header-toolbar {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header-toolbar {
+    display: none;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header-toolbar {
+    display: none;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+}
