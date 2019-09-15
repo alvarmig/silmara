@@ -21,4 +21,4 @@ app.use('/api/items', require('./routes/api/tblSilmaraAdapters'));
 
 const PORT = process.env.PORT || 5000; // Server look for environment variable or run on port 5000
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Serve started on port ${PORT}`));
