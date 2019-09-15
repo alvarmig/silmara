@@ -24,7 +24,7 @@ function filterItems() {
       Accept: 'application/json',
       'Content-Type': 'application/json'
     },
-    url: `/api/items/category/${categoryValue}`,
+    url: `/api/products/category/${categoryValue}`,
     dataType: 'json',
     success: function(responseProducts) {
       console.log('Me llego: ' + JSON.stringify(responseProducts));
