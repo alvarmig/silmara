@@ -13,10 +13,11 @@
 }
 .header-toolbar ul li a {
   color: grey;
-  font-size: 12px;
+  font-size: 15px;
 }
 .header-toolbar img {
   width: 18px;
+  padding-bottom: 4px;
 }
 
 /*****************************************/
@@ -33,13 +34,30 @@
   text-decoration: none;
 }
 
+.breadcrumb-back a {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 350;
+  line-height: 1.5;
+}
+.fa-chevron-left{
+  padding-right: 10px;
+}
+
+.breadcrumb-back {
+  padding-top: 12px;
+  text-align: right;
+}
+
 .product-details {
   margin-bottom: 30px;
 }
 .desc-product {
   padding-top: 20px;
 }
-.add-toCart {
+.btn-link {
   color: #000;
   border: 2px solid #000;
   text-transform: uppercase;
@@ -50,6 +68,13 @@
   letter-spacing: 0.1em;
   font-size: 12px;
   width: 200px;
+  border-radius: 10px;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: rgb(190, 190, 190);
 }
 
 /**********   END  Breadcrumb (Navigation Location)  *****************/

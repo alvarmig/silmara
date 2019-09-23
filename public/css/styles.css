@@ -13,10 +13,11 @@
 }
 .header-toolbar ul li a {
     color: grey;
-    font-size: 12px;
+    font-size: 15px;
 }
 .header-toolbar img {
     width: 18px; 
+    padding-bottom: 4px;
 }
 
 /*****************************************/
@@ -42,7 +43,40 @@
 }
 /**********    filters section  *****************/
 .filters-box{
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: none;
+}
+.filter{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.filter p{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #cccccc;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.filter p:hover{
+    text-decoration: underline;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.040em;
+    color: #000;
+    transition: all 0.2s linear;
+}
+
+.selectedCategory {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.040em;
 }
 
 /**********    items-list  *****************/
@@ -56,6 +90,10 @@
     box-shadow: 0 0 10px #3F0C1F;
     border: 1px solid #3F0C1F;
     border-radius: 6px;
+}
+/*************** Login ******************/
+.login-container{
+    margin-bottom: 50px;
 }
 
 /**********    FOOTER  *****************/
@@ -92,6 +130,11 @@
 #social-icons li img {
     width: 25px;
 }
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
 /**********   END FOOTER  ***************/
 
 
@@ -110,6 +153,12 @@
     .filters-box{
         margin-top: 30px;
     }
+    .filters-box{
+        max-width: none;
+    }
+    .filters-box p {
+        font-size: 12px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -119,6 +168,9 @@
     }
     .filters-box{
         margin-top: 30px;
+    }
+    .filters-box p {
+        font-size: 13px;
     }
 }
 
@@ -133,7 +185,9 @@
         border-radius: 6px;
     }
     .filters-box{
-        margin-top: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 750px;
     }
 }
 
@@ -145,9 +199,18 @@
         background: url(https://via.placeholder.com/960x300) no-repeat;
         height: 300px;
     }
+    .filters-box{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 790px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+    .filters-box{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 790px;
+    }
 }

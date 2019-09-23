@@ -1,10 +1,9 @@
 loadItems();
+getUserName();
 
 function loadItems() {
   $.ajax({
-    beforeSend: function() {
-      console.log('Espera un momento....');
-    },
+ 
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json'
@@ -13,17 +12,13 @@ function loadItems() {
     //data: { category: aretes },
     dataType: 'json',
     success: function(responseProducts) {
-      console.log('Me llego: ' + JSON.stringify(responseProducts));
-    
+     
       document.querySelector('#item-box').innerHTML = `${responseProducts
         .map(itemTemplate)
         .join('')}`;
     },
     error: function() {
       alert('no pude completar la comunicacion!!');
-    },
-    complete: function() {
-      console.log('Ya termine!!');
     }
   });
 }
@@ -35,13 +30,33 @@ function itemTemplate(product) {
                   <img src="https://via.placeholder.com/480x277" class="img-fluid"></img>
                   <span class="mt-2">
                     ${product.product_id} - ${product.product_name} : 
-                    ${product.product_price == 149.99 ? 'Out of stock' : `$${product.product_price}`}
+                    ${product.product_stock == 0 ? 'Out of stock' : `$${product.product_price}`}
                   </span>
                 </div>
               </a>          
             </div>`;
 }
 
+function getUserName(){
+  $.ajax({
+    
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    url: '/login/user',
+    //data: { category: aretes },
+    dataType: 'json',
+    success: function(responseProducts) {
+
+      let userName = responseProducts.name != undefined ? `Hola ${responseProducts.name}` : 'Hola' ;
+      document.querySelector('.userName').innerHTML = userName;
+    },
+    error: function() {
+      alert('no pude completar la comunicacion!!');
+    }
+  });
+}
 /*const template = document.getElementById('card')
 const lista = document.querySelector('#lista')
 

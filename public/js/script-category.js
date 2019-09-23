@@ -2,7 +2,8 @@ let filter = document.querySelectorAll('.filter');
 let categoryValue = '';
 
 filter.forEach(element => {
-  element.addEventListener('click', () => {
+  element.addEventListener('click', (e) => {
+    e.preventDefault();
     categoryValue = element.attributes.value.value;
     //console.log(element.attributes.value.value);
     if (categoryValue == 'all') {
@@ -14,7 +15,6 @@ filter.forEach(element => {
 });
 
 function filterItems() {
-  let hideDivs = document.querySelectorAll('.all-items');
 
   $.ajax({
     beforeSend: function() {

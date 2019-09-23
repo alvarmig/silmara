@@ -10,7 +10,16 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
     res.render('dashboard', {
         name: req.user.name,
         email: req.user.email
-    }));
+    })
+);
 
+// User
+router.get('/user', (req, res) => { 
+    if(req.user == undefined){
+        res.json('');
+      }else {  
+        res.json( {name: req.user.name})
+      }
+});
 
 module.exports = router;

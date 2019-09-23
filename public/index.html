@@ -7,12 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
 
     <title>Silmara</title>
   </head>
@@ -21,7 +16,7 @@
       <!-- HEADER -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand" href="#">Silmara</a>
+          <a class="navbar-brand" href="index.html">Silmara</a>
           <div class="navbar-header">
             <!--Collapsible Menu -->
             <button
@@ -56,9 +51,11 @@
 
           <div class="header-toolbar">
             <ul>
+              <li class="userName">Hola</li>
+              <li><a href="/login/dashboard"><i class="far fa-user"></a></i></li>
               <li>
-                <a href=""><img src="img/shopping_cart.png" alt=""/></a>
-              </li>
+                <a href="/api/products/shopping-cart"><img src="img/shopping_cart.png" alt=""/></a>
+              </li>              
               <li><a href="">Ayuda</a></li>
             </ul>
           </div>
@@ -83,17 +80,40 @@
       <div class="container filters-box text-center">
         <!-- Filters -->
         <div class="row">
-          <div id="filter0" class="col filter" name="filter" value="all">See All</div>
-          <div id="filter1" class="col filter" name="filter" value="aretes">aretes</div>
-          <div id="filter2" class="col filter" name="filter" value="anillos">anillos</div>
-          <div id="filter3" class="col filter" name="filter" value="cadenas lentes">cadenas lentes</div>
+          <div id="filter0" class="col filter" name="filter" value="all"><p>See All</p></div>
+          <div id="filter1" class="col filter" name="filter" value="aretes"><p>aretes</p></div>
+          <div id="filter2" class="col filter" name="filter" value="anillos"><p>anillos</p></div>
+          <div id="filter3" class="col filter" name="filter" value="cadenas lentes"><p>cadenas lentes</p></div>
+          <div id="filter4" class="col filter" name="filter" value="pulseras"><p>pulseras</p></div>
+          <div id="filter5" class="col filter" name="filter" value="collares"><p>collares</p></div>
         </div>
       </div>
       <!-- END Filters -->
 
       <div class="container-fluid items-list text-center">
-        <!-- item List -->
-        <div id="item-box" class="row mx-md-2"></div>
+        <div id="item-box" class="row mx-md-2"></div><!-- item List -->
+
+        <div><!-- Pagination-->
+          <nav aria-label="Page navigation example" >
+            <ul class="pagination justify-content-center"">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" value=1 href="#">1</a></li>
+              <li class="page-item"><a class="page-link" value=2 href="#">2</a></li>
+              <li class="page-item"><a class="page-link" value=3 href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div><!-- END Pagination-->
       </div>
       <!-- END item List -->
     </main>
@@ -139,6 +159,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts-pagination.js"></script>
     <script type="text/javascript" src="js/script-category.js"></script>
   </body>
 </html>
